@@ -1,0 +1,370 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+header{
+    background-image: url(assets/background.jpeg);
+    background-position: center;
+    background-size: max(2000px,100vw);
+    background-repeat: no-repeat;
+    height: max(80vh,600px);
+    position: relative;
+}
+.box{
+    height: max(80vh,600px);
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.69);
+    position: absolute;
+    top: 0;
+}
+#logo{
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 76vw;
+    margin: auto;
+    height: 90px;
+}
+.intro{
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Noto Sans",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 20px;
+    padding: 0px 25px;
+}
+.intro div:first-child{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+.intro div:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.intro div:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.separation{
+    background-color: rgb(44, 44, 44);
+    height: 8px;
+}
+.btn-in{
+    color: white;
+    background-color: red;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-lang{
+    background-color: rgba(1, 1, 1, 0.2);
+    color: white;
+    font-size: 15px;
+    padding: 5px 12px;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 4px;
+}
+nav div{
+    display: flex;
+    gap: 25px;
+}
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.email input{
+    background-color: rgba(1, 1, 1, 0.4);
+    border: 1px solid gray;
+    padding: 16px 120px 16px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 5px;
+}
+.email button{
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 13px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main{
+    color: white;
+    font-family: "Noto Sans",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    display: flex;
+    max-width: 75vw;
+    margin: auto;
+    align-items: center;
+    height: max(65vh,40vw);
+}
+section>div{
+    width: 50%;
+}
+.preview{
+    position: relative;
+}
+.preview>img{
+    width: 100%;
+}
+section .head{
+    font-size: 48px;
+    font-weight: 900;
+}
+section .body{
+    font-size: 24px;
+    font-weight: 400;
+}
+.first .video1{
+    position: absolute;
+    width: 73%;
+    left: 13%;
+    top: 20%;
+    z-index: -1;
+}
+.downloading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.downloading>div{
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(97, 97, 97);
+    position: absolute;
+    bottom: 7%;
+    border-radius: 12px;
+    padding: 2% 2%;
+    height: 18%;
+    width: 50%;
+    background-color: black;
+}
+.downloading div div img{
+    width: 100%;
+}
+.downloading .containing{
+    height: 100%;
+}
+.downloading .textcontaining{
+    width: 50%;
+    :first-child{
+        font-weight: 600;
+    }
+    :nth-child(2){
+        color: blue;
+    }
+}
+.containing:nth-child(3){
+    display: flex;
+    align-items: center;
+}
+#image1{
+    height: 100%;
+}
+#image2{
+    height: 70%;
+}
+.third .video2{
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    width: 61%;
+    z-index: -1;
+}
+
+.faqs{
+    max-width: 75vw;
+    margin: auto;
+    height: max(105vh,800px);
+}
+.faqheading{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+.faqbox{
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    height: 10%;
+    margin: 0.8% 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    :first-child{
+        padding: 0 3%;
+        font-size: 24px;
+        font-weight: 400;
+    }
+    :nth-child(2){
+        padding: 0 3%;
+        img{
+            height: 32px;
+        }
+    }
+    transition: background-color 200ms ease-in-out;
+}
+.faqbox:hover{
+    background-color: rgb(63, 63, 63);
+}
+.premail{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+footer{
+    color: white;
+    font-family: "Noto Sans",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: max(45vh,400px);
+    display: flex;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+}
+.end{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 14px;
+    font-weight: 300;
+    height: 70%;
+}
+.fulllength{
+    grid-column: 1/5;
+}
+.fulllength.btn-lang{
+    width: fit-content;
+    height: fit-content;
+}
+
+@media screen and (width<1280px){
+    nav , section , .faqs , footer{
+        max-width: 90vw;
+    }
+}
+@media screen and (width<960px) {
+    #logo{
+        width: 120px;
+    }
+    header{
+        background-size: max(1600px,100vw);
+    }
+    nav div{
+        gap: 10px;
+    }
+    .font1{
+        font-size: 32px !important;
+    }
+    .font2{
+        font-size: 18px !important;
+    }
+    header , .box{
+        height: max(500px,65vh);
+    }
+    section{
+        flex-direction: column;
+        height: max(700px,80vh);
+        justify-content: center;
+    }
+    section>div{
+        width: 86%;
+    }
+    .head , .body{
+        text-align: center;
+    }
+    .second , .fourth{
+        flex-direction: column-reverse;
+    }
+    footer{
+        height: max(65vh,450px);
+    }
+    .end{
+        grid-template-columns: 1fr 1fr;
+        height: 84%;
+    }
+    .end .fulllength{
+        grid-column: 1/3;
+    }
+}
+@media screen and (width<660px) {
+    header{
+        background-size: cover;
+    }
+    .email{
+        flex-direction: column;
+    }
+    .email input{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .email button{
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    .downloading .textcontaining{
+        font-size: 12px;
+    }
+}
+@media screen and (width<480px) {
+    #english{
+        display: none;
+    }
+    .email input{
+        padding-right: 50px;
+    }
+    .email button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    header , .box{
+        height: max(600px,65vh);
+    }
+    section{
+        height: max(500px,60vh);
+    }
+}
